@@ -17,3 +17,8 @@ chsh
 # Install Oh My Fish
 cd ~/
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+# Setup Git
+git config --global user.name "Mishaa"
+git config --global user.email mishaa.pro@proton.me
+git config --global init.defaultBranch main
