@@ -6,6 +6,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 source ~/.asdf/asdf.fish
 
 # Install Fisher and ASDF fish plugin
+echo "\n✨ Installing Fisher and Fish-asdf plugin: \n"
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install rstacruz/fish-asdf
 
