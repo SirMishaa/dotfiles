@@ -17,6 +17,8 @@ chsh
 # Install Oh My Fish
 cd ~/
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf install batman
+omf theme batman
 
 # Setup Git
 git config --global user.name "Mishaa"
