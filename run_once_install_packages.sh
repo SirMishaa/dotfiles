@@ -24,6 +24,7 @@ omf install batman
 omf theme batman
 
 # Install Bat (better cat)
+echo "\n✨ Installing Bat (better cat): \n"
 sudo apt install bat
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
