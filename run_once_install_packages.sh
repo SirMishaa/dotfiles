@@ -23,6 +23,11 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 omf install batman
 omf theme batman
 
+# Install Bat (better cat)
+sudo apt install bat
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # Install Fzf
 echo "\n✨ Installing Fzf fuzzy tool: \n"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
