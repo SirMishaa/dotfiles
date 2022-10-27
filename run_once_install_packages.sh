@@ -3,7 +3,7 @@
 # Update apt index
 sudo apt update
 
-# Install FiraCode font
+# Install FiraCode (Nerd) font
 echo "\n✨ Installing FiraCode fonts: \n"
 sudo apt install -y fonts-firacode
 
@@ -23,8 +23,8 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 omf install batman
 omf theme batman
 
-# Install Bat (better cat)
-echo "\n✨ Installing Bat (better cat): \n"
+# Install Bat.rs (better cat)
+echo "\n✨ Installing Bat.rs (better cat): \n"
 sudo apt install bat
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
@@ -33,6 +33,11 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 echo "\n✨ Installing Fzf fuzzy tool: \n"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# Install Starship.rs prompt
+echo "\n✨ Installing Starship.rs prompt: \n"
+curl -sS https://starship.rs/install.sh | sh
+echo "starship init fish | source" >> ~/.config/fish/config.fish
 
 # Setup Git
 echo "\n✨ Set up git: \n"
